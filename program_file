@@ -1,0 +1,7 @@
+# Generate logfile
+with open('daemons.txt', 'w') as fp:
+    fp.write('\n'.join('%s %s' % x for x in mylist))
+    
+# Reading from logfile
+import numpy as np
+np.genfromtxt(r'daemons.txt', delimiter=',')
