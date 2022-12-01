@@ -1,0 +1,22 @@
+# Generate logfile
+with open('daemons.txt', 'w') as fp:
+    fp.write('\n'.join('%s %s' % x for x in mylist))
+    
+# Reading from logfile
+import numpy as np
+np.genfromtxt(r'daemons.txt', delimiter=',')
+
+# Top 3 menu items on the list
+from heapq import nlargest
+from operator import itemgetter
+eid = {'eid1':001, 'eid2':002, 'eid3': 003, 'eid4':004, 'eid5': 005}.
+fid = {'fid1':101, 'fid2':102, 'fid3':103, 'fid4':104, 'fid5':005}
+for eid, value in nlargest(3, fid.items(), key=itemgetter(1)):
+    print(eid, fid)
+
+# Code returning error
+for i in range:
+  if(eid[i] == fid[i]) :
+    count++
+if(count>1) :
+   print("Error")
